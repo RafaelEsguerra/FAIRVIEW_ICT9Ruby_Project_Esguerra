@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Unit Conversion!</title>
+   <style>
+    body {
+    background-color: black;
+    text-align: center;
+    color: orangered;
+    font-family: times-new-roman;
+    }
+   </style>
+</head>
+<body>
+    <center><h1>Unit Converter!!! :D</h1></center>
+    <hr>
+    <center>Millimeter : <input type="number" id="mm" value=""> = <input type="number" id="result"></center>
+    <br>
+    <center><button onclick="militocenti()">To Centimeters</button>
+    <button onclick="militom()">To Meters</button>
+    <button onclick="militokilo()">To Kilometers</button></center>
+    <hr>
+    <img src="jarvis-tony-stark.gif">
+</body>
+<script type="text/javascript">
+    let x;
+    let y;
+    function militocenti(){
+        let x = parseInt(document.getElementById("mm").value);
+        let y = 10;
+        let result = x/y
+        document.getElementById('result').value = result;
+    }
+        function militom(){
+        let x = parseInt(document.getElementById("mm").value);
+        let y = 1000;
+        let result = x/y
+        document.getElementById('result').value = result;
+    }
+            function militokilo(){
+        let x = parseInt(document.getElementById("mm").value);
+        let y = 1e+6;
+        let result = x/y
+        document.getElementById('result').value = result;
+    }
+</script>
+</body>
+</html>
